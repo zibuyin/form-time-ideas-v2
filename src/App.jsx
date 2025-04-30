@@ -1,8 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
+import Joke from "./components/JokeComponent";
 
-function App(){
-  return <p>hello world</p>
+function App() {
+  return (
+    <>
+      <h1 className="Title">Form Time Ideas V2.0</h1>
+      <div id="app-root-div">
+        <Joke />
+        <Joke />
+      </div>
+    </>
+  );
 }
 
 export default App;
